@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--css link-->
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
+        <!--boxicons-->
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"/>
+        <!--google fonts link-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        
+        <title>Github Pages</title>
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo"><img src="jj.png"></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact me</a></li>
+            </ul>
+        </header>
+
+        <!--hero section-->
+        <section class="home" id="home">
+            <div class="hero-text">
+                <h3>Hello, I am </h3>
+                <h1>John Mark</h1>
+                <h4>Software Engineer - Web Developer - Programmer</h4>
+                <p>
+                    From Nairobi, Kenya. I have some experience with web development, python programming and Java.
+                </p>
+                <a href="#" class="btn">My Works</a>
+            </div>
+        </section>
+
+        <!--about section-->
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="A young light-s b622b680-96a9-4c1c-80ee-dc63b4c5fa49.png" alt="photo">
+            </div>
+
+            <div class="about-text">
+                <h2>About Me</h2>
+                <h5>
+                    I am a junior software engineer who <span>develops and deploys websites.</span>
+                </h5>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Velit in eius voluptate nostrum sunt consequuntur, quis alias minus eum, 
+                    provident facere quasi quos! Laudantium, earum deserunt corrupti sequi obcaecati at quibusdam? 
+                    Quae deleniti tempore accusamus doloribus autem mollitia vel suscipit.
+                </p>
+                <a href="#" class="btn">Hire Me</a>
+            </div>
+        </section>
+
+        <!--services section-->
+        <section class="services" id="services">
+            <div class="text-center">
+                <h2>My Services</h2>
+            </div>
+
+            <div class="service-item">
+                <div class="service-box">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Web Development</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ducimus iure dolorum tenetur facilis doloribus atque dolore rem. 
+                        Numquam, quibusdam sequi?
+                    </p>
+                    <a href="#" class="s-btnn">Read More >></a>
+                </div>
+
+                <div class="service-box">
+                    <i class='bx bx-laptop'></i>
+                    <h3>Software engineering</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ducimus iure dolorum tenetur facilis doloribus atque dolore rem. 
+                        Numquam, quibusdam sequi?
+                    </p>
+                    <a href="#" class="s-btnn">Read More >></a>
+                </div>
+
+                <div class="service-box">
+                    <i class='bx bxl-python'></i>
+                    <h3>Python Programming</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ducimus iure dolorum tenetur facilis doloribus atque dolore rem. 
+                        Numquam, quibusdam sequi?
+                    </p>
+                    <a href="#" class="s-btnn">Read More >></a>
+                </div>
+            </div>
+        </section>
+
+        <!--portfolio section-->
+        <section class="portfolio" id="portfolio">
+            <div class="left-contact">
+                <div class="in">
+                    <i class='bx bxl-linkedin-square'></i>
+                    <h4>Linked In</h4>
+                </div>
+            </div>
+            <div class="left-contact">
+                <div class="in">
+                    <i class='bx bxl-dribbble' ></i>
+                    <h4>Dribble</h4>
+                </div>
+            </div>
+            <div class="left-contact">
+                <div class="in">
+                    <i class='bx bxl-behance' ></i>
+                    <h4>Behance</h4>
+                </div>
+            </div>
+            <div class="right-contact">
+                <h2>Profiles</h2>
+                <a href="#">Hire Me</a>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Praesentium voluptatibus totam enim expedita exercitationem quisquam maiores eum accusantium. 
+                    Obcaecati accusamus labore tenetur quasi fuga cupiditate maxime nobis cumque officiis optio?
+                </p>
+            </div>
+
+        </section>
+
+        <!--contact section-->
+        <section class="contact" id="contact">
+            <!--<div class="contact-text">
+                <h2>Reach Out:</h2>
+            </div>-->
+            <div class="form">
+                <form action="post">
+                    <fieldset>
+                        <legend>Contact Me</legend>
+                        <div>
+                            <label for="name" id="name">Name:</label>
+                            <input type="text" id="name" placeholder="e.g. John Doe" pattern="[a-zA-z0-9]{2,}" required aria-label="name">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="email" id="email">Email:</label>
+                            <input type="text" id="email" inputmode="email" placeholder=" e.g. 123@example.org" aria-describedby="email" aria-label="email" required>
+                        </div><span id="email"></span>
+                        <br>
+                        <div>
+                            <label for="message" id="message">Message:</label>
+                            <textarea rows="5" columns="20" placeholder="Enter the message here" aria-describedby="message" aria-label="message" required>
+                            </textarea>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="submit" id="submit">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+
+        <!--end section-->
+        <section class="end-section">
+            <h3>&copy; John Mark</h3>
+            <p>
+                For more information kindly reach out using the links below. 
+            </p>
+            <div class="end-icons">
+                <a href="#"><i class='bx bxl-whatsapp' ></i></a>
+                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-discord-alt'></i></a>
+                <a href="#"><i class='bx bxl-slack' ></i></a>
+            </div>
+
+        </section>
+
+        <!--scroll btn-->
+        <a href="#" class="scroll-btn"><i class='bx bx-chevron-up' ></i></a>
+
+        <!--scroll reveal-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--custom js script-->
+        <script src="script.js"></script>
+        
+    </body>
+</html>
