@@ -25,6 +25,9 @@
 section{
     max-width: 1400px;
     align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 20px;
 }
 body{
     color: var(--text-color);
@@ -43,6 +46,11 @@ header{
     padding: 28px 11%;
     border-bottom: 1px solid transparent;
     transition: all ease 0.5s;
+    max-width: 1400px;
+}
+.hero-text, .about-img, .about-text, .service-item, .left-contact, .right-contact {
+    max-width: 1400px; /* Adjust as needed */
+    margin: 0 auto;
 }
 .logo img{
     width: 100%;
