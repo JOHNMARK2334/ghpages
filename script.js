@@ -31,3 +31,20 @@ sr.reveal('.left-contact', {origin: 'left'});
 sr.reveal('.right-contact', {origin: 'right'});
 sr.reveal('.end-section', {origin: 'top'});
 sr.reveal('.form', {origin: 'bottom'});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-list a');
+
+    function changeActiveLink() {
+        let currentSectionIndex = sections.length;
+
+        while (--currentSectionIndex && window.scrollY + window.innerHeight / 2 < sections[currentSectionIndex].offsetTop) {}
+
+        navLinks.forEach(link => link.classList.remove('active'));
+        navLinks[currentSectionIndex].classList.add('active');
+    }
+
+    changeActiveLink();
+    window.addEventListener('scroll', changeActiveLink);
+});
