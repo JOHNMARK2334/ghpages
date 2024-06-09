@@ -48,7 +48,7 @@ header{
     transition: all ease 0.5s;
     max-width: 1400px;
 }
-.hero-text, .about-img, .about-text, .service-item, .left-contact, .right-contact {
+header,.hero-text, .about-img, .about-text, .service-item, .left-contact, .right-contact {
     max-width: 1400px; /* Adjust as needed */
     margin: 0 auto;
 }
@@ -59,6 +59,7 @@ header{
 }
 .nav-list{
     display: flex;
+    max-width: 1400px;
 }
 .nav-list a{
     color: var(--second-color);
