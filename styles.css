@@ -33,6 +33,7 @@ body{
     color: var(--text-color);
     background-color: var(--bg-color);
 }
+/**
 header{
     position: fixed;
     top: 0;
@@ -43,15 +44,85 @@ header{
     align-items: center;
     justify-content: space-between;
     background: transparent;
-    padding: 28px 11%;
+    padding: 28px 5%;
     border-bottom: 1px solid transparent;
     transition: all ease 0.5s;
     max-width: 1400px;
+}*/
+/* Add this to styles.css */
+
+/* General styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 5%;
+    background: transparent;
+    transition: all 0.5s ease;
 }
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    color: var(--second-color);
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.nav-list a:hover {
+    color: var(--main-color);
+}
+
+#menu-icon {
+    font-size: 42px;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+/* Large devices 
+@media (min-width: 1024px) {
+    #menu-icon {
+        display: none;
+    }
+}
+
+/* Small devices 
+@media (max-width: 1023px) {
+    .nav-list {
+        flex-direction: column;
+        position: fixed;
+        top: 70px; /* Adjust based on header height 
+        right: -100%; /* Hidden initially 
+        width: 100%;
+        height: 100vh;
+        background: var(--bg-color);
+        align-items: center;
+        justify-content: center;
+        transition: right 0.5s ease;
+    }
+
+    .nav-list li {
+        margin: 20px 0;
+    }
+
+    .nav-list.active {
+        right: 0; /* Show the menu 
+    }
+}
+
 header,.hero-text, .about-img, .about-text, .service-item, .left-contact, .right-contact {
-    max-width: 1400px; /* Adjust as needed */
+    max-width: 1400px; /* Adjust as needed
     margin: 0 auto;
-}
+}*/
 .logo img{
     width: 100%;
     height: auto;
@@ -341,9 +412,6 @@ span{
 }
 
 @media(max-width:1600px){
-    header{
-        padding: 14px 4%;
-    }
     header.sticky{
         padding: 8px 4%;
     }
@@ -362,6 +430,58 @@ span{
         --h1-font: 5rem;
         --h2-font: 3.0rem;
         --p-font: 1rem;
+    }
+}
+/* Fixing the Navbar on Large Devices */
+@media (min-width: 1024px) {
+    header {
+        padding: 28px 5%;
+    }
+    .nav-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .nav-list li {
+        margin: 0 15px;
+    }
+}
+
+/* Removing Horizontal Scrolls on Smaller Screens */
+@media (max-width: 1023px) {
+    body {
+        overflow-x: hidden;
+    }
+    .nav-list {
+        flex-direction: column;
+        position: fixed;
+        top: 70px; /* Adjust based on header height */
+        right: -100%; /* Hidden initially */
+        width: 100%;
+        height: 100vh;
+        background: var(--bg-color);
+        align-items: center;
+        justify-content: center;
+        transition: right 0.5s ease;
+    }
+    .nav-list li {
+        margin: 20px 0;
+    }
+    .nav-list.open {
+        right: 0; /* Show the menu */
+    }
+    .service-item {
+        grid-template-columns: 1fr; /* Ensure single column layout on small screens */
+    }
+    section {
+        padding: 60px 20px; /* Adjust padding to prevent horizontal scroll */
+    }
+    .home {
+        padding: 0 20px; /* Adjust padding to prevent horizontal scroll */
+    }
+    .about, .services, .portfolio, .contact {
+        padding: 60px 20px; /* Adjust padding to prevent horizontal scroll */
     }
 }
 @media(max-width:1060px){
